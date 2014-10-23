@@ -31,11 +31,12 @@
 
  
 <div id="wrapper">
-    <div id="header">
+    <div id="header" class="clearfix">
         <div id="logo" class="logo">
         	<a href="<?php echo home_url(); ?>" >
         		<img src="<?php bloginfo('template_url'); ?>/images/logo.png" alt="Alt" >
         	</a>
         </div>
     	<?php wp_nav_menu( array( 'container' => 'false', 'menu_class' => 'nav', 'theme_location' => 'primary-menu' ) ); ?>
+        <figure id="linea" class="linea"><img src="<?php bloginfo('template_url'); ?>/images/linea.png" ></figure>
     </div>

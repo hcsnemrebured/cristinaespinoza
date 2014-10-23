@@ -9,3 +9,103 @@ Version: 0.1
 
 /* Reset browser defaults */
 @import url('reset.css');
+
+/* Tipografias */
+@font-face {
+    font-family: 'ErasLightITCRegular';
+    src: url('fonts/eraslightitc.eot');
+    src: url('fonts/eraslightitc.eot') format('embedded-opentype'),
+         url('fonts/eraslightitc.woff2') format('woff2'),
+         url('fonts/eraslightitc.woff') format('woff'),
+         url('fonts/eraslightitc.ttf') format('truetype'),
+         url('fonts/eraslightitc.svg#ErasLightITCRegular') format('svg');
+}
+@font-face {
+    font-family: 'ErasMediumITCRegular';
+    src: url('fonts/erasmediumitc.eot');
+    src: url('fonts/erasmediumitc.eot') format('embedded-opentype'),
+         url('fonts/erasmediumitc.woff2') format('woff2'),
+         url('fonts/erasmediumitc.woff') format('woff'),
+         url('fonts/erasmediumitc.ttf') format('truetype'),
+         url('fonts/erasmediumitc.svg#ErasMediumITCRegular') format('svg');
+}
+@font-face {
+    font-family: 'ErasBoldThinRegular';
+    src: url('fonts/eras-boldth.eot');
+    src: url('fonts/eras-boldth.eot') format('embedded-opentype'),
+         url('fonts/eras-boldth.woff2') format('woff2'),
+         url('fonts/eras-boldth.woff') format('woff'),
+         url('fonts/eras-boldth.ttf') format('truetype'),
+         url('fonts/eras-boldth.svg#ErasBoldThinRegular') format('svg');
+}
+/* Fin Tipografías */
+
+html {
+    width: 100%;
+    min-height: 100%;
+    color: #4a4a4a;
+    font-family: 'ErasMediumITCRegular', sans-serif;
+    font-size: 100%;
+}
+
+body {
+    width: 100%;
+    background: url(images/paper.png) repeat;
+}
+
+#header {
+    width: 82%;
+    margin: 40px auto 10px auto;
+    position: relative;
+}
+
+#logo {
+    float: right;
+}
+
+#menu-primario {
+    padding-top: 60px;
+}
+
+#menu-primario li {
+    display: inline-block;
+    padding: 5px 2%;
+    margin: 1px 5px;
+}
+
+#menu-primario li a {
+    font-size: 1.6em;
+    text-decoration: none;
+}
+
+#menu-primario li a:link, #menu-primario li a:visited {
+    color: #4a4a4a;
+}
+
+#menu-primario li a:hover {
+    color: #F7931D;
+}
+
+.linea {
+    width: 100%;
+    clear: both;
+    margin: 5px 0;
+    display: block;
+}
+
+.linea img {
+    width: 100%;
+}
+
+/* Clearfix */
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+	}
+* html .clearfix             { zoom: 1; } /* IE6 */
+*:first-child+html .clearfix { zoom: 1; } /* IE7 */
+/* Fin Clearfix */
