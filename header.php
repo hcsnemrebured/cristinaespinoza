@@ -16,6 +16,7 @@
      */
     if ( is_singular() && get_option( 'thread_comments' ) )
         wp_enqueue_script( 'comment-reply' );
+        wp_enqueue_script('jquery-post_organizer', get_bloginfo('stylesheet_directory') . '/js/jquery-post_organizer.js', array('jquery'), '20121014' );
         wp_head(); ?>    
 <?php 
     wp_get_archives('type=monthly&format=link');

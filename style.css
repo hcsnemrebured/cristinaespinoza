@@ -4,7 +4,7 @@ Theme URI: http://cristinaespinoza.cl
 Description: Sitio exclusivo para Cristina Espinoza.
 Author: Ignacio Duque
 Author URI: http://dfine.me
-Version: 0.1
+Version: 0.2
 */
 
 /* Reset browser defaults */
@@ -54,7 +54,7 @@ body {
 }
 
 #header {
-    width: 82%;
+    width: 95%;
     margin: 40px auto 10px auto;
     position: relative;
 }
@@ -64,7 +64,7 @@ body {
 }
 
 #menu-primario {
-    padding-top: 60px;
+    padding-top: 80px;
 }
 
 #menu-primario li {
@@ -109,3 +109,14 @@ body {
 * html .clearfix             { zoom: 1; } /* IE6 */
 *:first-child+html .clearfix { zoom: 1; } /* IE7 */
 /* Fin Clearfix */
+
+#contenido_principal {
+    width: 100%;
+    position: relative;
+}
+.articulo_index {
+    width: 600px;
+    padding: 10px;
+    margin: 5px 0;
+    position: absolute;
+}

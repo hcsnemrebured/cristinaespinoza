@@ -1,4 +1,5 @@
 <?php get_header(); ?>
+<section id="contenido_principal" class="clearfix">
 <?php 
 // The Query
 $query = new WP_Query('post_type=post&posts_perpage=9');
@@ -10,7 +11,7 @@ if ( $query->have_posts() ) {
         $id = get_the_ID();
         $titulo = get_the_title();
         $category = get_the_category($id); ?>
-        <article id="post-<?php echo $id; ?>" class="<?php 
+        <article id="post-<?php echo $id; ?>" class="articulo_index <?php 
         foreach ($category as $item){
             echo $item -> slug;
             echo ' ';
@@ -24,4 +25,5 @@ if ( $query->have_posts() ) {
 /* Restore original Post Data */
 wp_reset_postdata();
 ?>
+</section>
 <?php get_footer(); ?>

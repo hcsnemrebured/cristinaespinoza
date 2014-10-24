@@ -23,7 +23,7 @@ function register_my_menu() {
 // Enable post thumbnails
 add_theme_support('post-thumbnails');
 set_post_thumbnail_size(150, false);
-add_image_size('mediano', 640, false);
+add_image_size('mediano', 600, false);
 add_image_size('grande', 1200, false);
 add_image_size('pequenho', 300, false);
 
