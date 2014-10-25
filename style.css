@@ -120,3 +120,32 @@ body {
     margin: 5px 0;
     position: absolute;
 }
+
+.titulo_index {
+    position: relative;
+    bottom: 59px;
+    padding: 15px;
+    background: rgba(0, 0, 0, 0.62);
+    font-size: 1.6em;
+}
+
+.articulo_index a {
+    text-decoration: none;
+}
+
+.articulo_index a:link, .articulo_index a:visited {
+    color: #F7931D;
+}
+
+.articulo_index a:hover {
+    color: #4DA1CE;
+}
+footer {
+    width: 95%;
+    margin: 5px auto;
+    position: relative;
+}
+
+#logofooter {
+    display: inline-block;
+}

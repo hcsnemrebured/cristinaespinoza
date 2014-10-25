@@ -1,8 +1,8 @@
 <?php get_header(); ?>
-<section id="contenido_principal" class="clearfix">
+<section id="contenido_principal" class="clearfix" >
 <?php 
 // The Query
-$query = new WP_Query('post_type=post&posts_perpage=9');
+$query = new WP_Query('post_type=post&posts_perpage=9&orderby=rand');
 
 // The Loop
 if ( $query->have_posts() ) {
@@ -15,9 +15,9 @@ if ( $query->have_posts() ) {
         foreach ($category as $item){
             echo $item -> slug;
             echo ' ';
-        } ?>"><?php
+        } ?>"><a href="<?php the_permalink(); ?>" target="_blank"><?php
         the_post_thumbnail( 'mediano' );
-        echo '<h3 class="titulo_index" >' . $titulo . '</h3></article>';
+        echo '<h3 class="titulo_index" >' . $titulo . '</h3></a></article>';
 	}
 } else {
 	// no posts found

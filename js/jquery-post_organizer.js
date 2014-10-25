@@ -27,10 +27,12 @@ function positionBlocks() {
 		var min = Array.min(blocks);
 		var index = $.inArray(min, blocks);
 		var leftPos = (index*(colWidth));
+        var alturaArticle = $(this).height();
 		$(this).css({
 			'visibility':'visible',
 			'left':(leftPos+spaceLeft)+'px',
-			'top':(min+positionTop) +'px'
+			'top':(min+positionTop) +'px',
+            'height' : alturaArticle -59 + 'px'
 		});
 		blocks[index] = min+$(this).outerHeight();
 	});
