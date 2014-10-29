@@ -1,4 +1,4 @@
-<?php get_header(); ?>
+<?php get_header('js'); ?>
 <section id="contenido_principal" class="clearfix" >
 <?php 
 // The Query

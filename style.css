@@ -1,10 +1,10 @@
 /*
 Theme Name: Cristina Espinoza
 Theme URI: http://cristinaespinoza.cl
-Description: Sitio exclusivo para Cristina Espinoza.
+Description: Sitio de la artista Cristina Espinoza.
 Author: Ignacio Duque
 Author URI: http://dfine.me
-Version: 0.2
+Version: 0.5
 */
 
 /* Reset browser defaults */
@@ -46,6 +46,17 @@ html {
     color: #4a4a4a;
     font-family: 'ErasMediumITCRegular', sans-serif;
     font-size: 100%;
+}
+
+h1 {
+    font-size: 4em;
+    margin-bottom: 30px;
+    font-family: 'ErasBoldThinRegular';
+}
+
+p {
+    line-height: 1.4;
+    font-size: 1.2em;
 }
 
 body {
@@ -144,8 +155,28 @@ footer {
     width: 95%;
     margin: 5px auto;
     position: relative;
+    padding-top: 87px;
 }
 
 #logofooter {
     display: inline-block;
+}
+
+.single_post img {
+    float: left;
+    width: 50%;
+    height: auto;
+}
+
+.single_titulo {
+    display: inline;
+}
+
+.single_post p {
+    display: inline;
+}
+.single_texto {
+    float: left;
+    padding: 0 35px 35px;
+    max-width: 40%;
 }
